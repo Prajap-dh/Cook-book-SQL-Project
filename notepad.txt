@@ -1,0 +1,197 @@
+tables 
+
+1)
+CREATE TABLE `admin_task` (
+  `admin_task_id` int(11) NOT NULL AUTO_INCREMENT,
+  `Receipe_Id` int(11) NOT NULL,
+  `User_id` int(11) NOT NULL,
+  `Status` varchar(45) NOT NULL,
+  `Comments` longtext NOT NULL,
+  `Lastupdated` datetime DEFAULT NULL,
+  PRIMARY KEY (`admin_task_id`),
+  KEY `Receipe_Id` (`Receipe_Id`),
+  KEY `User_id` (`User_id`),
+  CONSTRAINT `admin_task_ibfk_1` FOREIGN KEY (`Receipe_Id`) REFERENCES `Receipe` (`Receipe_Id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `admin_task_ibfk_2` FOREIGN KEY (`User_id`) REFERENCES `User_Info` (`User_Id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+SELECT * FROM 20223S_CPS5995_01db.User_Info;
+
+
+2)
+CREATE TABLE `Ingridients` (
+  `Ingridients_Id` int(10) NOT NULL AUTO_INCREMENT,
+  `Ingridients_Name` varchar(100) NOT NULL,
+  `Quantity` int(10) DEFAULT NULL,
+  `Measure` varchar(45) DEFAULT NULL,
+  `User_Id` int(10) NOT NULL,
+  `CreatedDate` datetime NOT NULL,
+  PRIMARY KEY (`Ingridients_Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=latin1;
+
+
+3)
+CREATE TABLE `Receipe` (
+  `Receipe_Id` int(10) NOT NULL AUTO_INCREMENT,
+  `Receipe_Name` varchar(100) NOT NULL,
+  `Author` varchar(45) NOT NULL,
+  `ReceipeDesc` longtext NOT NULL,
+  `Instructions` longtext NOT NULL,
+  `Course_Cata` varchar(45) NOT NULL,
+  `Cusine` varchar(45) NOT NULL,
+  `Preptime` int(11) DEFAULT NULL,
+  `Cooktime` int(11) DEFAULT NULL,
+  `size` int(11) DEFAULT NULL,
+  `CreatedDate` datetime DEFAULT NULL,
+  `User_Id` int(11) NOT NULL,
+  `Status` varchar(45) NOT NULL,
+  PRIMARY KEY (`Receipe_Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=latin1;
+
+
+4)
+CREATE TABLE `receipe_banned_words` (
+  `receipe_banned_words_id` int(11) NOT NULL AUTO_INCREMENT,
+  `Banned_Keyword` varchar(50) NOT NULL,
+  PRIMARY KEY (`receipe_banned_words_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+
+
+
+5)
+CREATE TABLE `Receipe_comments` (
+  `Receipe_comments_Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Comments` varchar(200) NOT NULL,
+  `User_Id` int(11) NOT NULL,
+  `Receipe_id` int(11) NOT NULL,
+  `commentdate` datetime NOT NULL,
+  PRIMARY KEY (`Receipe_comments_Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1 COMMENT='			';
+
+
+6)
+CREATE TABLE `receipe_like` (
+  `receipe_like_id` int(11) NOT NULL AUTO_INCREMENT,
+  `like_status` varchar(45) DEFAULT NULL,
+  `User_Id` int(11) DEFAULT NULL,
+  `Receipe_Id` int(11) DEFAULT NULL,
+  `CreatedDate` datetime DEFAULT NULL,
+  PRIMARY KEY (`receipe_like_id`),
+  KEY `User_Id` (`User_Id`),
+  KEY `Receipe_Id` (`Receipe_Id`),
+  CONSTRAINT `receipe_like_ibfk_1` FOREIGN KEY (`User_Id`) REFERENCES `User_Info` (`User_Id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `receipe_like_ibfk_2` FOREIGN KEY (`Receipe_Id`) REFERENCES `Receipe` (`Receipe_Id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+
+7)
+CREATE TABLE `Rep_Image_Info` (
+  `Rep_Image_Info_Id` int(10) NOT NULL AUTO_INCREMENT,
+  `Oldfilename` varchar(100) NOT NULL,
+  `newfilename` varchar(100) NOT NULL,
+  `imagepath` longtext NOT NULL,
+  `videourl` longtext DEFAULT NULL,
+  `Receipe_Id` int(10) NOT NULL,
+  `User_Id` int(10) NOT NULL,
+  `Lastupdateddate` datetime NOT NULL,
+  PRIMARY KEY (`Rep_Image_Info_Id`),
+  KEY `Receipe_Id` (`Receipe_Id`),
+  KEY `User_Id` (`User_Id`),
+  CONSTRAINT `Rep_Image_Info_ibfk_1` FOREIGN KEY (`Receipe_Id`) REFERENCES `Receipe` (`Receipe_Id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `Rep_Image_Info_ibfk_2` FOREIGN KEY (`User_Id`) REFERENCES `User_Info` (`User_Id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+
+8)
+CREATE TABLE `Rep_Ingridients` (
+  `Rep_ingId` int(10) NOT NULL AUTO_INCREMENT,
+  `Receipe_Id` int(10) NOT NULL,
+  `Ingridients_Id` int(10) NOT NULL,
+  `Quantity` int(11) DEFAULT NULL,
+  `Measure` varchar(45) DEFAULT NULL,
+  `User_Id` int(10) NOT NULL,
+  `CreatedDate` datetime NOT NULL,
+  PRIMARY KEY (`Rep_ingId`)
+) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=latin1;
+
+
+9)
+CREATE TABLE `User_Access_Rights` (
+  `access_id` int(5) NOT NULL AUTO_INCREMENT,
+  `User_Type` varchar(50) NOT NULL,
+  `Subscription_Type` varchar(50) DEFAULT NULL,
+  `rights` varchar(50) DEFAULT NULL,
+  `Rights_FLAG` varchar(3) DEFAULT NULL,
+  `User_Id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`access_id`),
+  KEY `Rights_idx` (`User_Id`),
+  CONSTRAINT `Rights` FOREIGN KEY (`User_Id`) REFERENCES `User_Info` (`User_Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=latin1;
+
+
+10)
+CREATE TABLE `User_Credentail` (
+  `Crid` int(11) NOT NULL AUTO_INCREMENT,
+  `User_Id` int(11) NOT NULL,
+  `Username` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL,
+  PRIMARY KEY (`Crid`),
+  KEY `UserIdReference_idx` (`User_Id`),
+  CONSTRAINT `` FOREIGN KEY (`User_Id`) REFERENCES `User_Info` (`User_Id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1 COMMENT='					';
+
+
+11)
+
+CREATE TABLE `User_Credentail_Internal` (
+  `Crid` int(11) NOT NULL AUTO_INCREMENT,
+  `User_Id` int(11) NOT NULL,
+  `Username` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL,
+  PRIMARY KEY (`Crid`),
+  KEY `User_Id` (`User_Id`),
+  CONSTRAINT `User_Credentail_Internal_ibfk_1` FOREIGN KEY (`User_Id`) REFERENCES `User_Info` (`User_Id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+
+
+12)
+CREATE TABLE `User_Info` (
+  `User_Id` int(10) NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(45) NOT NULL,
+  `LastName` varchar(45) NOT NULL,
+  `City` varchar(45) NOT NULL,
+  `ZipCode` varchar(45) NOT NULL,
+  `Mobile` bigint(20) DEFAULT NULL,
+  `Email` varchar(45) NOT NULL,
+  `SecurityQuestion` varchar(45) NOT NULL,
+  `Answer` varchar(45) NOT NULL,
+  `Status` varchar(45) DEFAULT NULL,
+  `CreatedDate` datetime NOT NULL,
+  PRIMARY KEY (`User_Id`),
+  UNIQUE KEY `Email_UNIQUE` (`Email`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
+
+
+13)
+
+CREATE TABLE `user_preferences` (
+  `preference_Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Prefernce_cata` varchar(500) DEFAULT NULL,
+  `Preference_Cusine` varchar(500) DEFAULT NULL,
+  `User_Id` int(11) DEFAULT NULL,
+  `LastUpdated` datetime DEFAULT NULL,
+  PRIMARY KEY (`preference_Id`),
+  KEY `User_Id` (`User_Id`),
+  CONSTRAINT `user_preferences_ibfk_1` FOREIGN KEY (`User_Id`) REFERENCES `User_Info` (`User_Id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+
+14)
+
+CREATE TABLE `20223S_CPS5995_01db`.`user_images` (
+  `Image_id` INT NULL PRIMARY KEY   AUTO_INCREMENT,
+  `imagepath` VARCHAR(250)  NULL,
+  `User_id` INT not null ,
+
+ 
+    FOREIGN KEY (`User_id`)     REFERENCES `20223S_CPS5995_01db`.`User_Info` (`User_Id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);

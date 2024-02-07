@@ -1,0 +1,85 @@
+"Receipe_Id","Receipe_Name","Author","ReceipeDesc","Instructions","Course_Cata","Cusine","Preptime","Cooktime","size","CreatedDate","User_Id","Status"
+19,"marijuana","qwert","shellfish","boil Ortolan","Appetizer","Africa and Middle East",12,0,1,"2023-04-10 11:56:34",6,"Rejected"
+20,"Chicken Alfredo Pasta","Dharmay","Creamy and delicious pasta dish made with chicken and Alfredo sauce.","Cook pasta according to package instructions, drain and set aside.
+In a large skillet, cook chicken over medium-high heat until browned and cooked through.
+Add garlic and cook for 1 minute.
+Pour Alfredo sauce into the skillet and bring to a simmer.
+Add cooked pasta to the skillet and stir to coat in the sauce.
+Serve hot with grated Parmesan cheese on top.","Main Dish","Europe",24,0,4,"2023-04-10 12:03:02",6,"Active"
+21,"Classic Beef Burger","Dharmay","Juicy beef patty topped with cheese, lettuce, tomato, and onion, served on a toasted bun.","Preheat grill to medium-high heat.
+Form ground beef into 4 equal patties and season with salt and pepper.
+Grill burgers for 3-4 minutes per side or until desired doneness.
+Add cheese slices to burgers during the last minute of grilling.
+Toast buns on the grill for 30 seconds to 1 minute.
+Assemble burgers with lettuce, tomato, and onion.
+Serve hot with ketchup and mustard on the side.","Main Dish","North and South America",15,0,4,"2023-04-10 12:03:53",6,"Active"
+23,"Margherita Pizza","Dharmay"," Classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil.","Preheat oven to 450°F (230°C).
+Roll out pizza dough and transfer to a pizza stone or baking sheet.
+Spread tomato sauce evenly over the dough.
+Sprinkle mozzarella cheese over the sauce.
+Bake pizza for 10-12 minutes or until crust is golden brown and cheese is melted.
+Remove from oven and sprinkle fresh basil on top.
+Serve hot.","Main Dish","Asia and Pacific Ocean",20,0,4,"2023-04-15 12:26:40",6,"Active"
+24,"Falafel","Dharmay","Classic Middle Eastern chickpea fritters","1.Soak chickpeas overnight in water. 2. Drain and blend chickpeas with onion, garlic, parsley, cilantro, cumin, coriander, salt, and pepper until a coarse paste forms. 3. Refrigerate mixture for 30 minutes. 4. Shape mixture into small patties. 5. Heat oil in a deep pan and fry patties until golden brown. 6. Serve with tahini sauce or wrapped in pita bread.","Appetizer","Africa and Middle East",40,0,4,"2023-04-23 17:10:26",6,"Active"
+25,"Muhammara","Dharmay","Muhammara is a dip made with roasted red peppers walnuts breadcrumbs and spices  It is typically served with pita bread or vegetables","In a food processor, pulse the roasted red peppers, walnuts, breadcrumbs, pomegranate molasses, lemon juice, garlic, cumin, smoked paprika, and cayenne pepper until smooth.
+With the food processor running, slowly pour in the olive oil until the dip is creamy.
+Season with salt and pepper to taste.
+Serve with pita bread or vegetables","Appetizer","Asia and Pacific Ocean",20,0,6,"2023-04-23 17:26:51",6,"Active"
+26,"Caprese Skewers","Dharmay","Caprese Skewers are a simple and elegant appetizer made with fresh mozzarella cherry tomatoes and basil leaves They are typically drizzled with balsamic glaze","Rinse and dry the cherry tomatoes and basil leaves.
+Thread a cherry tomato, fresh mozzarella ball, and fresh basil leaf onto a skewer, alternating between the three ingredients.
+Repeat with the remaining ingredients to make 12 skewers.
+Drizzle the skewers with balsamic glaze.
+Season with salt and pepper to taste.
+Serve chilled.","Appetizer","Europe",10,0,6,"2023-04-23 18:04:51",6,"Active"
+27,"Guacamole","Dharmay","Guacamole is a classic appetizer made with ripe avocados tomatoes onions and fresh lime juice  It s a versatile dip that can be enjoyed with tortilla chips veggies or as a topping for tacos and burritos","Cut the avocados in half, remove the pit, and scoop the flesh into a mixing bowl.
+Mash the avocado with a fork or potato masher until it reaches your desired consistency.
+Add the diced tomato, chopped onion, minced jalapeño (if using), and chopped cilantro to the mixing bowl.
+Squeeze the lime juice over the top of the mixture.
+Season with salt and pepper to taste.
+Mix all of the ingredients together until well combined.
+Serve chilled with tortilla chips, veggies, or as a topping for tacos and burritos.","Appetizer","North & South America",15,0,6,"2023-04-23 18:11:57",6,"Active"
+28,"Khobz","Dharmay","Khobz is a traditional Arabic flatbread made with flour yeast salt and water It is s a versatile bread that can be used for sandwiches  wraps or served alongside dips and spreads","In a large mixing bowl, combine the flour, yeast, and salt.
+Add the warm water to the mixing bowl and stir until the dough comes together.
+Turn the dough out onto a floured surface and knead for 10-15 minutes, until the dough is smooth and elastic.
+Return the dough to the mixing bowl, cover with a damp cloth, and let it rise in a warm place for 1 hour.
+Preheat your oven to 450°F.
+Divide the dough into 8 equal pieces and roll each piece into a 1/4-inch thick circle.
+Place the dough circles onto a baking sheet and bake for 8 to 10 minutes, until lightly golden brown.
+Serve warm or at room temperature.","Bread","Africa and Middle East",60,0,4,"2023-04-23 18:19:22",6,"Active"
+29,"Naan Bread","Dharmay","Naan is a popular Indian flatbread made with flour yeast yogurt and milk It is  a perfect accompaniment to curries and other Indian dishes","In a large mixing bowl, combine the flour, yeast, sugar, and salt.
+Add the yogurt and milk to the mixing bowl and stir until the dough comes together.
+Turn the dough out onto a floured surface and knead for 10-15 minutes, until the dough is smooth and elastic.
+Return the dough to the mixing bowl, cover with a damp cloth, and let it rise in a warm place for 1 hour.
+Preheat your oven to 500°F.
+Divide the dough into 8 equal pieces and roll each piece into an oval shape.
+Brush each piece with melted butter and place them onto a baking sheet.
+Bake for 5-7 minutes, until the naan is puffed up and lightly golden brown.
+Serve warm.","Bread","Asia and Pacific Ocean",40,0,4,"2023-04-23 18:23:06",6,"Active"
+30,"Cornbread","Dharmay","Cornbread is a classic Southern bread made with cornmeal flour sugar buttermilk and eggs It is a staple at many meals and can be served as a side dish or as a breakfast item","Preheat your oven to 400°F (200°C).
+In a large mixing bowl, combine the cornmeal, flour, sugar, baking powder, and salt.
+In a separate mixing bowl, whisk together the buttermilk, eggs, and vegetable oil.
+Add the wet ingredients to the dry ingredients and mix until just combined.
+Pour the batter into a greased 8-inch square baking pan.
+Bake for 20-25 minutes or until a toothpick inserted in the center comes out clean.
+Remove from the oven and let cool for a few minutes before serving.","Bread","North & South America",35,0,5,"2023-04-23 18:35:29",6,"Active"
+31,"Fattoush Salad","Dhramay","Fattoush Salad is a Middle Eastern salad that is fresh tangy and full of flavor  It typically includes lettuce tomatoes cucumber  radish parsley  and mint  and is topped with pita chips and a sumac based dressing","In a large bowl, combine the chopped romaine lettuce, tomatoes, cucumber, radish, parsley, and mint.
+In a separate bowl, whisk together the sumac, lemon juice, olive oil, salt, and pepper.
+Drizzle the dressing over the salad and toss to coat.
+Add the pita chips and toss again.
+Serve immediately.","Salad","Africa and Middle East",15,0,4,"2023-04-23 19:47:13",6,"Active"
+32,"Papaya Salad","Dharmay","Papaya Salad  also known as Som Tam  is a refreshing Thai salad made with shredded green papaya  tomatoes carrots and a spicy sweet and sour dressing","In a large bowl, combine the shredded green papaya, chopped tomatoes, and shredded carrots.
+In a separate bowl, whisk together the fish sauce, lime juice, brown sugar, minced garlic, and chopped chili peppers.
+Drizzle the dressing over the salad and toss to coat.
+Sprinkle the chopped peanuts over the top of the salad.
+Serve immediately.","Salad","Asia and Pacific Ocean",20,0,4,"2023-04-23 19:50:54",6,"Active"
+33,"Panzanella Salad","Dharmay","Panzanella Salad is an Italian bread salad made with tomatoes cucumber onion and day old bread all dressed in a simple olive oil and vinegar dressing","Preheat the oven to 350°F (175°C).
+Spread the cubed bread out on a baking sheet and toast in the oven for 10-15 minutes, or until crispy and golden brown.
+In a large bowl, combine the toasted bread cubes, chopped tomatoes, chopped cucumber, sliced red onion, and chopped fresh basil.
+In a separate bowl, whisk together the olive oil, red wine vinegar, salt, and pepper.
+Drizzle the dressing over the salad and toss to coat.
+Let the salad sit for at least 30 minutes before serving to allow the flavors to meld together.","Salad","Europe",30,0,4,"2023-04-23 19:55:03",6,"Active"
+34,"Southwestern Black Bean Salad","Dharmay","Southwestern Black Bean Salad is a colorful and nutritious salad made with black beans corn tomatoes and avocado all tossed in a zesty lime dressing","In a large bowl, combine the black beans, corn kernels, chopped tomatoes, chopped red onion, chopped bell pepper, and chopped fresh cilantro.
+In a separate bowl, whisk together the lime juice, olive oil, minced garlic, ground cumin, salt, and pepper.
+Drizzle the dressing over the salad and toss to coat.
+Add the diced avocado and gently toss again.
+Serve immediately","Salad","North & South America",20,0,4,"2023-04-23 19:58:57",6,"Active"

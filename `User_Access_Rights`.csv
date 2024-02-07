@@ -1,0 +1,28 @@
+"access_id","User_Type","Subscription_Type","rights","Rights_FLAG","User_Id"
+7,"Admin","","","",5
+9,"User","Paid","Create Post","No",6
+10,"User","Paid","Create Channel","No",6
+11,"User","Unpaid","Create Post","No",7
+12,"User","Unpaid","Create Channel","No",7
+13,"User","Unpaid","Create Post","No",8
+14,"User","Unpaid","Create Channel","No",8
+15,"User","Unpaid","Create Post","No",9
+16,"User","Unpaid","Create Channel","No",9
+17,"User","Unpaid","Create Post","No",10
+18,"User","Unpaid","Create Channel","No",10
+25,"User","Unpaid","Create Post","No",14
+26,"User","Unpaid","Create Channel","No",14
+27,"User","Unpaid","Create Post","No",15
+28,"User","Unpaid","Create Channel","No",15
+29,"User","Unpaid","Create Post","No",16
+30,"User","Unpaid","Create Channel","No",16
+31,"User","Unpaid","Create Post","No",17
+32,"User","Unpaid","Create Channel","No",17
+33,"User","Unpaid","Create Post","No",18
+34,"User","Unpaid","Create Channel","No",18
+45,"User","Paid","Create Post","Yes",35
+46,"User","Paid","Create Channel","Yes",35
+47,"User","Paid","Create Post","Yes",36
+48,"User","Paid","Create Channel","Yes",36
+49,"User","Unpaid","Create Post","No",37
+50,"User","Unpaid","Create Channel","No",37
